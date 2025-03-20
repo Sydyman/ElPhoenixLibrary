@@ -10,9 +10,22 @@ repositories {
     mavenCentral()
 }
 
-tasks.register("publish") {
-    doLast {
+publishing {
+    publications {
+        create<MavenPublication>("release") {
+            groupId = "com.github.Sydyman"
+            artifactId = "ElPhoenixLibrary"
+            version = "1.0.0"
 
-        println("JitPack...")
+            afterEvaluate {
+                from(components["kotlin"])
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            url = uri("https://jitpack.io")
+        }
     }
 }
