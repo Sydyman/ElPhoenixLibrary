@@ -1,0 +1,51 @@
+# Gradle
+.gradle/
+build/
+
+# Kotlin
+*.class
+*.jar
+*.war
+*.ear
+
+# Gradle wrapper
+gradle-wrapper.jar
+gradle-wrapper.properties
+
+# IDEA (IntelliJ IDEA)
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+
+*~
+*.swp
+*.bak
+*.tmp
+*.log
+
+
+.idea/
+*.iml
+*.ipr
+
+
+local.properties
+
+
+*.asc
+*.sha1
+*.md5
+
+
+**/node_modules/
